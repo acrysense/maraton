@@ -30,14 +30,101 @@
   <div class="page-wrapper flex --just-space --dir-col">
     <header class="header">
       <div class="container">
-        <a href="#"
-           class="header__logo">
-          <img src="img/maraton.svg"
-               alt="maraton.com">
+        <a class="header__logo" href="#">
+          <img src="img/maraton.svg" alt="maraton.com" />
         </a>
       </div>
     </header>
-    <main class="main"></main>
+    <div class="center-wrapper">
+      <div class="container flex --just-space --align-str">
+        <div class="menu"></div>
+        <main class="main flex --dir-col">
+          <h1 class="page-title">Activity calendar</h1>
+          <div class="content-wrapper flex --just-space --align-str">
+            <div class="calendar">
+  <div class="calendar__title flex --just-space --align-end">
+    <time class="calendar__title-date" datetime="2022-09-12">September 12, Sun</time>
+    <span class="calendar__title-text">Until the next marathon <span class="calendar__accent-text">8 days</span></span>
+  </div>
+  <div class="calendar__wrapper">
+    <input type="text" class="calendar__input js-startdate" value="2022-06-24" />
+    <input type="text" class="calendar__input js-enddate" value="2022-06-30" />
+  </div>
+</div>
+ <div class="tasks">
+  <div class="tasks__content">
+    <span class="tasks__title">Tasks for <time class="tasks__title-date" datetime="2022-08-24">August 24</time></span>
+    <div class="tasks__wrapper">
+      <span class="tasks__subtitle">Your tasks for tooday</span>
+      <ul class="tasks__list">
+        <li class="tasks__list-item flex --align-center">
+          <label class="tasks__item-label">
+            <input class="tasks__check" type="checkbox" />
+            <span class="tasks__check-body --svg__check-before"></span>
+            <span class="tasks__item-descr">Stick to the training plan</span>
+          </label>
+          <span class="tasks__tooltip">
+            <button class="tasks__tooltip-icon --svg__tooltip" type="button" aria-label="Help tooltip"></button>
+            <span class="tasks__tooltip-text">Some tooltip help text for displaying on hover or click.</span>
+          </span>
+        </li>
+
+        <li class="tasks__list-item flex --align-center">
+          <label class="tasks__item-label">
+            <input class="tasks__check" type="checkbox" />
+            <span class="tasks__check-body --svg__check-before"></span>
+            <span class="tasks__item-descr">Enter your water norm for the day </span>
+          </label>
+          <span class="tasks__tooltip">
+            <button class="tasks__tooltip-icon --svg__tooltip" type="button" aria-label="Help tooltip"></button>
+            <span class="tasks__tooltip-text">Some tooltip help text for displaying on hover or click.</span></span
+          >
+        </li>
+
+        <li class="tasks__list-item flex --align-center">
+          <label class="tasks__item-label">
+            <input class="tasks__check" type="checkbox" />
+            <span class="tasks__check-body --svg__check-before"></span>
+            <span class="tasks__item-descr">Contrast shower</span>
+          </label>
+          <span class="tasks__tooltip">
+            <button class="tasks__tooltip-icon --svg__tooltip" type="button" aria-label="Help tooltip"></button>
+            <span class="tasks__tooltip-text">Some tooltip help text for displaying on hover or click.</span>
+          </span>
+        </li>
+
+        <li class="tasks__list-item flex --align-center">
+          <label class="tasks__item-label">
+            <input class="tasks__check" type="checkbox" />
+            <span class="tasks__check-body --svg__check-before"></span>
+            <span class="tasks__item-descr">Anti-cellulite procedures</span>
+          </label>
+          <span class="tasks__tooltip">
+            <button class="tasks__tooltip-icon --svg__tooltip" type="button" aria-label="Help tooltip"></button>
+            <span class="tasks__tooltip-text">Some tooltip help text for displaying on hover or click.</span>
+          </span>
+        </li>
+
+        <li class="tasks__list-item flex --align-center">
+          <label class="tasks__item-label">
+            <input class="tasks__check" type="checkbox" />
+            <span class="tasks__check-body --svg__check-before"></span>
+            <span class="tasks__item-descr">Go 8-10 thousand steps per day</span>
+          </label>
+          <span class="tasks__tooltip">
+            <button class="tasks__tooltip-icon --svg__tooltip" type="button" aria-label="Help tooltip"></button>
+            <span class="tasks__tooltip-text">Some tooltip help text for displaying on hover or click.</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </main>
+      </div>
+    </div>
     <footer class="footer">
   <div class="container flex --just-space --align-center">
     <p class="footer__copy">@ copyright maraton.com 2022. All rights reserved</p>
@@ -55,8 +142,9 @@
     </p>
   </div>
 </footer>
+ <!-- <script src="js/libs.min.js"></script> -->
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
 
   </div>
 </body>
-
-</html>
