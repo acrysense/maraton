@@ -165,7 +165,13 @@
               <input type="email"
                      inputmode="email"
                      placeholder="email@text.com"
-                     required
+           minlength="6"
+           maxlength="254"
+           autocapitalize="off"
+           spellcheck="false"
+           autocorrect="off"
+           pattern="^(?![_.-])((?![_.-][_.-])[a-z\d_.-]){0,63}[a-z\d]@((?!-)((?!--)[a-z\d-]){0,63}[a-z\d]\.){1,2}([a-z]{2,14}\.)?[a-z]{2,14}$"
+           required
                      class="form__input">
             </label>
             <label class="form__input-item">
